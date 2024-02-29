@@ -1,0 +1,404 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+/*This is an universal selector, which means I want to apply this to everything*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* with display - flex everything will go in a row; so we want to go in a column- will add the flex sdirection; then we need to align them*/
+/*body {
+  font-family: "Poppins", "sans-serif";
+  overflow-x: hidden;
+  background-image: linear-gradient(90deg, #fffc5f,#e258d6);
+  color: rgb(49, 48, 48);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}*/
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  background-color: white;
+  justify-items: center;
+}
+
+
+.container {
+  /*border: #e9ec19 solid 2px;*/
+  width: 100%;
+  
+}
+
+/*
+.hero {
+background-image: linear-gradient(190deg, #fffc5f,#e258d6);
+height: 100vh;
+color: black;
+font-size: 30px;
+} */
+
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px;
+ }
+
+
+ nav {
+   display: flex;
+   justify-content: space-between;
+
+ }
+
+ ul{
+   display: flex;
+   list-style-type: none;
+   width: 500px;
+   justify-content: space-around;
+   font-size: 20px;
+ }
+
+ 
+
+
+ li {
+  text-decoration: none;
+ }
+
+ h1 {
+   font-size: 35px;
+   margin: 0;
+ }
+
+ h2 {
+  font-size: 25px;
+  margin: 0;
+}
+
+
+ p {
+   margin: 0;
+   font-size: 30px;
+   font-weight: 300;
+   
+ }
+
+ /*What I have learned*/
+span.js-learning {
+  color: #40ad00;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+  
+}
+  
+ .hero-text{
+   margin-left: 80px;
+   margin-bottom: 200px;
+ }
+
+ .button {
+   width: 200px;
+   height: 55px;
+   border-radius: 30px;
+   background-color:#faf876;
+   text-align: center;
+   font-size: 30px;
+   font-weight: 300;
+   padding-top: 5px;
+   margin-top: 20px;
+  
+
+ }
+
+ .button:hover {
+   background-color: #fffc5f;
+ }
+   
+ .button:active {
+   background-color: #9006ac;
+   color: white;
+ }
+
+
+ .hero-area {
+   display: flex;
+   height: 100%;
+   justify-content: space-between;
+   align-items: center;
+   /*border: #219c16 solid 2px;*/
+ }
+
+ .socials {
+   padding-bottom: 200px;
+ }
+
+ .logo {
+ height: 150px;
+ margin: 30px;
+ }
+
+ #social-icons{
+   color: #2f0438;
+   margin: 20px;
+   
+ }
+
+
+ /* second section*/
+ /*sub-section is not a class now
+ .sub-section {
+   border: #86169c solid 2px;
+   display: flex;
+   justify-content: space-around;
+   padding: 80px;
+ } */
+
+ /*info is not a class now
+ .info {
+  margin-left: 80px;
+  margin-bottom: 200px;
+  border: #167d9c solid 2px;
+}
+*/
+
+
+ .headshot {
+   width: 460px;
+   /*border: #f37b35 solid 2px;*/
+ }
+
+ .headshot-container {
+   display: flex;
+   align-items: center;
+   /*border: #86169c solid 2px;*/
+ }
+ 
+
+ /* projects section*/
+ .project-card {
+   width: 350px;
+   height: 600px;
+   box-shadow: 5px 5px 20px violet;
+   margin: 10px;
+   border-radius: 50px;
+ }
+
+ .project-card p {
+   font-size: 15px;
+   text-align: center;
+   padding: 20px;
+ }
+
+ 
+ .project-container {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   /*border: #79ece3 solid 2px;*/
+ }
+
+ /*for small screen*/
+
+ @media only screen and (max-width: 1000px) {
+
+  
+  
+    
+   .project-container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .sub-section-container {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+
+ }
+
+ .sub-section-alternative {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 80px;
+ }
+
+ .subtext {
+   font-size: 15px;
+   font-weight: 300;
+   
+ }
+
+.project-image {
+  margin-top: 25px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px rgb(212, 212, 212);
+}
+
+hr {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-link {
+ text-decoration: none;
+ color: #9006ac;
+}
+
+a {
+  text-decoration: none;
+  color: black; 
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+
+
+
+
+
+
+
+/*for small screen*/
+@media only screen and (min-width:320px) {
+
+  
+
+
+  .hamburger {
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 20px;
+    color: #2f0438;
+    display: block;
+    align-self: flex-end;
+    
+  }
+
+  ul {
+    display: none;
+    background-color: #fdfb8b;
+    margin: 0px;
+  }
+
+  ul.show {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #fdfb8b;
+  }
+
+
+  .logo {
+    display: none;
+  }
+
+  .sub-section-container{
+    display: flex;
+    width: 100%;
+  }
+
+
+}
+
+
+
+
+
+/*contact me section*/
+
+.sub-section-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /*border: 2px  solid rgb(223, 57, 238);*/
+}
+
+.container-form {
+  display: flex;
+  width: 100%;
+  /*width: 300px;*/
+  /*border: 2px  solid rgb(223, 240, 70);*/
+  /*margin: 0px;*/
+  display: flex;
+  justify-content: center;
+}
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin: 20px 0 40px;
+  /*width: 100px;*/
+  padding: 15px;
+  font-size: 1.5vw;
+  font-family: 'Poppins', sans-serif;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active{
+  transform: scale(0.98);
+}
+
+
+
+.form-control {
+  margin: 20px 0 40px;
+  /*border: 2px  solid rgb(17, 0, 255);*/
+}
+
+.form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 1.5vw;
+  color: #fff;
+  /*border: 2px  solid rgb(0, 255, 21);*/
+
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+  outline: 0;
+  border-bottom-color: rgb(220, 202, 236);
+}
+
+
+
+
